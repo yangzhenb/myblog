@@ -5,12 +5,16 @@
 
 	<nav v-bind:class="active" v-on:click.prevent>
 
-		<!-- 当菜单上的链接被点击时，我们调用了 makeActive 方法, 该方法在 Vue 实例中创建。 -->
+		<!-- 当菜单上的链接被点击时，我们调用了 makeActive 方法, 该方法在 Vue 实例中创建。 
 
 		<a href="#" class="home" v-on:click="makeActive('home')">Home</a>
 		<a href="#" class="projects" v-on:click="makeActive('projects')">Projects</a>
 		<a href="#" class="services" v-on:click="makeActive('services')">Services</a>
-		<a href="#" class="contact" v-on:click="makeActive('contact')">Contact</a>
+		<a href="#" class="contact" v-on:click="makeActive('contact')">Contact</a>-->
+		<router-link to="/" class="home" v-on:click.native="makeActive('home')">Home</router-link>
+		<router-link to="/about" class="projects" v-on:click.native="makeActive('projects')">Projects</router-link>
+		<router-link to="/about" class="services" v-on:click.native="makeActive('services')">Services</router-link>
+		<router-link to="/blog" class="contact" v-on:click.native="makeActive('contact')">New Blog</router-link>
 	</nav>
 
  	<!-- 以下 "active" 变量会根据当前选中的值来自动变换 
