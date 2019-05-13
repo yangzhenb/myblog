@@ -1,6 +1,6 @@
 <template>
 <div>
-          <mavon-editor v-model="value"/>
+          <mavon-editor style="min-height: 479px; min-width: 100%" v-model="value"/>
 </div>
 </template>
 <script>

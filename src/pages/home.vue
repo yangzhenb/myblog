@@ -1,6 +1,6 @@
 <template>
 <div>
-          <mavon-editor v-model="value"/>
+          <h1>Home</h1>
 </div>
 </template>
 <script>
