@@ -3,14 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 import mavonEditor from 'mavon-editor'
-// markdown-it对象：md.s_markdown, md => mavonEditor实例
-//                 or
-//                 mavonEditor.markdownIt 
 import 'mavon-editor/dist/css/index.css'
+
 // use
 Vue.use(mavonEditor)
-
+Vue.use(ElementUI);
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

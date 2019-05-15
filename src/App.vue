@@ -1,33 +1,20 @@
 <template>
   <div id="app">
-    <div class="container-fluid" >
-      <div class="row header">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
+    <el-container>
+      <el-header height="240px">
         <Header/>
-        </div>
-        <div class="col-md-2"></div>
-      </div>
-      <div class="row header">
-        <div class="col-md-12">
-          <HeaderNavBar/>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-2">
-          <LeftNavBar/>
-        </div>
-        <div class="col-md-8">
-          <router-view></router-view>
-        </div>
-        <div class="col-md-2">.col-md-1</div>
-      </div>
-      <div class="row">
-        <div class="col-md-3">.col-md-3</div>
-        <div class="col-md-8">.col-md-8</div>
-        <div class="col-md-1">.col-md-1</div>
-      </div>
-    </div>
+        <HeaderNavBar/>
+      </el-header>
+      <el-aside>
+        <LeftNavBar/>
+      </el-aside>
+      <el-main>
+        <router-view></router-view>
+      </el-main>
+      <el-footer>
+        <P>这里是底边栏</P>
+      </el-footer>
+    </el-container>
   </div>
 </template>
 
