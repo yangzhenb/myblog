@@ -12,7 +12,8 @@
         <router-view></router-view>
       </el-main>
       <el-footer>
-        <P>这里是底边栏</P>
+        <hr/>
+        <Foot></Foot>
       </el-footer>
     </el-container>
   </div>
@@ -22,12 +23,14 @@
 import Header from './components/Header'
 import HeaderNavBar from './components/HeaderNavBar'
 import LeftNavBar from './components/LeftNavBar'
+import Foot from './components/Foot'
 export default {
   name: 'App',
   components: {
     Header,
     HeaderNavBar,
-    LeftNavBar
+    LeftNavBar,
+    Foot
   }
 }
 </script>
