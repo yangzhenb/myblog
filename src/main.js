@@ -7,11 +7,13 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import mavonEditor from 'mavon-editor'
 import 'mavon-editor/dist/css/index.css'
+import axios from 'axios'
 
 // use
 Vue.use(mavonEditor)
-Vue.use(ElementUI);
+Vue.use(ElementUI)
 Vue.config.productionTip = false
+Vue.prototype.$http= axios
 
 /* eslint-disable no-new */
 new Vue({
